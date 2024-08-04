@@ -1,6 +1,9 @@
 import { defineUserConfig } from "vuepress";
+import { getDirname, path } from "vuepress/utils";
 
 import theme from "./theme.js";
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   base: "/",
@@ -20,6 +23,5 @@ export default defineUserConfig({
 
   theme,
 
-  // Enable it with pwa
-  // shouldPrefetch: false,
+  clientConfigFile: path.resolve(__dirname, "./client.ts"),
 });

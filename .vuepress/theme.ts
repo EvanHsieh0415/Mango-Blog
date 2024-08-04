@@ -4,7 +4,7 @@ import { enUsNavbar, zhTwNavbar } from "./navbar/index.js";
 import { enUsSidebar, zhTwSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://Mango-Blog.pages.dev",
+  hostname: "https://mango-blog.pages.dev/",
   iconAssets: "fontawesome-with-brands",
   logo: "https://avatars.githubusercontent.com/u/74277414",
   repo: "EvanHsieh0415/Mango-Blog",
