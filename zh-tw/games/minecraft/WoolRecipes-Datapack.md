@@ -4,30 +4,15 @@ category: Minecraft
 tag:
 - 個人作品
 - 資料包
+cover: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/main/img/icon/new_icon.png?raw=true
+banner: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/main/img/icon/new_icon.png?raw=true
 ---
 
 # 羊毛調整資料包
 
 :::center
-![][icon]  
 <BadgeGithub name="羊毛調整資料包" path="Mango-Minecraft-Project/WoolRecipes-DataPack"/><BadgeModrinth name="羊毛調整資料包" path="/datapack/wool-recipes"/><BadgeMcmod name="羊毛調整資料包" path="7623"/>
 :::
-
----
-
-## 畫廊
-
-> 羊毛逆合成 4 根線  
-> ![][gallery-wool-to-string]  
-
-> 已染色的羊毛再次染色  
-> ![][gallery-wool-redye]  
-
-> 已染色的地毯再次染色  
-> ![][gallery-carpet-redye]  
-
-> 已染色的床再次染色  
-> ![][gallery-bed-redye]  
 
 ---
 
@@ -50,7 +35,22 @@ tag:
 
 ---
 
-[icon]: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/main/img/icon/new_icon.png?raw=true
+## 畫廊
+
+> 羊毛逆合成 4 根線  
+> ![][gallery-wool-to-string]  
+
+> 已染色的羊毛再次染色  
+> ![][gallery-wool-redye]  
+
+> 已染色的地毯再次染色  
+> ![][gallery-carpet-redye]  
+
+> 已染色的床再次染色  
+> ![][gallery-bed-redye]  
+
+---
+
 [icon-license]: https://raw.githubusercontent.com/Mango-Minecraft-Project/WoolRecipes-DataPack/main/img/icon/new_icon_license.png
 
 [gallery-wool-to-string]: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/main/img/README/wool_tweaks_wool_to_string.png?raw=true

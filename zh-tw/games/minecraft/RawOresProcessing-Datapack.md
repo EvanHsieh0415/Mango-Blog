@@ -4,27 +4,15 @@ category: Minecraft
 tag:
 - 個人作品
 - 資料包
+hover: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/icon/icon%20400x400.png?raw=true
+banner: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/icon/icon%20400x400.png?raw=true
 ---
 
 # 原礦處理資料包
 
 :::center
-![][icon]  
 <BadgeGithub name="原礦處理資料包" path="Mango-Minecraft-Project/RawOresProcessing-Datapack"/><BadgeModrinth name="原礦處理資料包" path="datapack/raw-ores-processing"/><BadgeMcmod name="原礦處理資料包" path="7643"/>
 :::
-
----
-
-## 畫廊
-
-> 熔爐  
-> ![][gallery-0]  
-
-> 高爐  
-> ![][gallery-1]  
-
-> 模組支援  
-> ![][gallery-2]  
 
 ---
 
@@ -52,8 +40,19 @@ tag:
 
 ---
 
-[icon]: https://raw.githubusercontent.com/Mango-Minecraft-Project/RawOresProcessing-Datapack/main/img/icon/icon%20400x400.png
+## 畫廊
 
-[gallery-0]: https://raw.githubusercontent.com/Mango-Minecraft-Project/RawOresProcessing-Datapack/main/img/docs/0.png
-[gallery-1]: https://raw.githubusercontent.com/Mango-Minecraft-Project/RawOresProcessing-Datapack/main/img/docs/1.png
-[gallery-2]: https://raw.githubusercontent.com/Mango-Minecraft-Project/RawOresProcessing-Datapack/main/img/docs/2.png
+> 熔爐  
+> ![][gallery-0]  
+
+> 高爐  
+> ![][gallery-1]  
+
+> 模組支援  
+> ![][gallery-2]  
+
+---
+
+[gallery-0]: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/docs/0.png?raw=true
+[gallery-1]: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/docs/1.png?raw=true
+[gallery-2]: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/docs/2.png?raw=true
