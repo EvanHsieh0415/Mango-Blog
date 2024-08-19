@@ -16,7 +16,7 @@ banner: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/i
 # 簡單動力
 
 :::center
-<BadgeGithub name="簡單動力" path="Mango-Minecraft-Project/SimplyCreateModel"/><BadgeModrinth name="簡單動力 資源包" path="resourcepack/simply-create-model"/><BadgeModrinth name="簡單動力 模組" path="mod/simply-create-model-mod"/><BadgeMcmod name="簡單動力" path="7643"/>
+<BadgeGithub name="簡單動力" path="Mango-Minecraft-Project/SimplyCreateModel"/> <BadgeModrinth name="簡單動力 資源包" path="resourcepack/simply-create-model"/> <BadgeModrinth name="簡單動力 模組" path="mod/simply-create-model-mod"/> <BadgeMcmod name="簡單動力" path="7643"/>
 :::
 
 ---

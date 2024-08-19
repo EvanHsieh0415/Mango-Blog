@@ -11,7 +11,7 @@ banner: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/bl
 # 原礦處理資料包
 
 :::center
-<BadgeGithub name="原礦處理資料包" path="Mango-Minecraft-Project/RawOresProcessing-Datapack"/><BadgeModrinth name="原礦處理資料包" path="datapack/raw-ores-processing"/><BadgeMcmod name="原礦處理資料包" path="7643"/>
+<BadgeGithub name="原礦處理資料包" path="Mango-Minecraft-Project/RawOresProcessing-Datapack"/> <BadgeModrinth name="原礦處理資料包" path="datapack/raw-ores-processing"/> <BadgeMcmod name="原礦處理資料包" path="7643"/>
 :::
 
 ---

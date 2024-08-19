@@ -11,7 +11,7 @@ banner: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/mai
 # 羊毛調整資料包
 
 :::center
-<BadgeGithub name="羊毛調整資料包" path="Mango-Minecraft-Project/WoolRecipes-DataPack"/><BadgeModrinth name="羊毛調整資料包" path="/datapack/wool-recipes"/><BadgeMcmod name="羊毛調整資料包" path="7623"/>
+<BadgeGithub name="羊毛調整資料包" path="Mango-Minecraft-Project/WoolRecipes-DataPack"/> <BadgeModrinth name="羊毛調整資料包" path="/datapack/wool-recipes"/> <BadgeMcmod name="羊毛調整資料包" path="7623"/>
 :::
 
 ---

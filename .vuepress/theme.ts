@@ -70,7 +70,10 @@ export default hopeTheme({
       switchLocale: "modal",
     },
 
-    blog: true,
+    blog: {
+      filter: ({ frontmatter, filePathRelative }) =>
+        !!(frontmatter.article ?? (!!filePathRelative && !frontmatter.home && frontmatter.index !== false)),
+    },
 
     components: {
       components: ["Badge", "VPCard"],
