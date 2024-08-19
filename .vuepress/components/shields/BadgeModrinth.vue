@@ -22,5 +22,5 @@ const ImageAlt = computed(() => {
 </script>
 
 <template>
-  <a :href="aHref"><img src="https://img.shields.io/badge/Modrinth-313338?style=for-the-badge&logo=Modrinth" :alt="ImageAlt" class="wool-icon" /></a>
+  <a :href="aHref" class="custom-badge"><img src="https://img.shields.io/badge/Modrinth-313338?style=for-the-badge&logo=Modrinth" :alt="ImageAlt" /></a>
 </template>

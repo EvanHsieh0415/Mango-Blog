@@ -13,7 +13,7 @@ const props = defineProps({
 });
 
 const aHref = computed(() => {
-  return `https://curseforge.com/${props.path}`;
+  return `https://curseforge.com/minecraft/${props.path}`;
 });
 
 const ImageAlt = computed(() => {
@@ -22,5 +22,5 @@ const ImageAlt = computed(() => {
 </script>
 
 <template>
-  <a :href="aHref"><img src="https://img.shields.io/badge/CurseForge-313338?style=for-the-badge&logo=CurseForge" :alt="ImageAlt" class="wool-icon" /></a>
+  <a :href="aHref" class="custom-badge"><img src="https://img.shields.io/badge/CurseForge-313338?style=for-the-badge&logo=CurseForge" :alt="ImageAlt" /></a>
 </template>
