@@ -14,7 +14,7 @@ tag:
 | 鼓風機     | [批次喚魂](#批次喚魂)         | `create:haunting`            |
 | \          | [批次洗滌](#批次洗滌)         | `create:splashing`           |
 | 石磨       | [研磨](#研磨)                 | `create:milling`             |
-| 粉碎倫     | [粉碎](#粉碎)                 | `create:crushing`            |
+| 粉碎輪     | [粉碎](#粉碎)                 | `create:crushing`            |
 | 動力輥壓機 | [壓塑](#壓塑)                 | `create:compacting`          |
 | \          | [金屬鍛造](#金屬鍛造)         | `create:pressing`            |
 | 動力攪拌器 | [混合攪拌](#混合攪拌)         | `create:mixing`              |
