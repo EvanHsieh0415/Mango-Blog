@@ -2,13 +2,13 @@
 icon: cube
 category: Minecraft
 tag:
-- 共同作品
-- 資源包
-- 模組
+  - 共同作品
+  - 資源包
+  - 模組
 author:
-- name: 亚龙糖浆
-  url: https://space.bilibili.com/454794521/
-- 芒果凍布丁
+  - name: 亚龙糖浆
+    url: https://space.bilibili.com/454794521/
+  - 芒果凍布丁
 cover: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/img/pack-819x512.png?raw=true
 banner: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/img/pack-819x512.png?raw=true
 ---
@@ -16,7 +16,7 @@ banner: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/i
 # 簡單動力
 
 :::center
-<BadgeGithub name="簡單動力" path="Mango-Minecraft-Project/SimplyCreateModel"/> <BadgeModrinth name="簡單動力 資源包" path="resourcepack/simply-create-model"/> <BadgeModrinth name="簡單動力 模組" path="mod/simply-create-model-mod"/> <BadgeMcmod name="簡單動力" path="7643"/>
+<BadgeGithub name="簡單動力" path="Mango-Minecraft-Project/SimplyCreateModel"/> <BadgeModrinth name="簡單動力 資源包" path="resourcepack/simply-create-model"/> <BadgeModrinth name="簡單動力 模組" path="mod/simply-create-model-mod"/> <BadgeMcmod name="簡單動力" path="15909  "/>
 :::
 
 ---
