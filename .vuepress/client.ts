@@ -1,11 +1,18 @@
-import BadgeComponent from "./components/shields/index.js";
-
 import { defineClientConfig } from "vuepress/client";
+import { Component, DefineComponent } from "vue/dist/vue.js";
+
+import BadgeComponent from "./components/shields/index.js";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    const addComponent = ([name, component]) => app.component(name, component);
+    const addComponentFn = ([name, component]) =>
+      app.component(name, component);
+    const addComponent = (components: {
+      [name: string]: Component | DefineComponent;
+    }) => Object.entries(components).forEach(addComponentFn);
 
-    Object.entries(BadgeComponent).forEach(addComponent);
+    // Add components
+
+    addComponent(BadgeComponent);
   },
 });
