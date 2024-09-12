@@ -8,6 +8,11 @@ export const enUsNavbar = navbar([
     link: "en-us/posts/",
   },
   {
+    text: "Learning Notes",
+    icon: "pen-to-square",
+    link: "en-us/studing/",
+  },
+  {
     text: "Game Column",
     icon: "gamepad",
     link: "en-us/games/",

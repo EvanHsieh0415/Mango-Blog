@@ -11,6 +11,13 @@ export const zhTwSidebar = sidebar({
       children: "structure",
     },
     {
+      text: "學習筆記",
+      icon: "book",
+      link: "studing/",
+      prefix: "studing/",
+      children: "structure",
+    },
+    {
       text: "遊戲專欄",
       icon: "gamepad",
       link: "games/",

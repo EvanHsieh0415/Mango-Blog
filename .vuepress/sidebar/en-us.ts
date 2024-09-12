@@ -11,6 +11,13 @@ export const enUsSidebar = sidebar({
       children: "structure",
     },
     {
+      text: "Learning Notes",
+      icon: "book",
+      link: "studing/",
+      prefix: "studing/",
+      children: "structure",
+    },
+    {
       text: "Game Column",
       icon: "gamepad",
       link: "games/",

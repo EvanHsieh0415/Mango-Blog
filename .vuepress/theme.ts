@@ -17,7 +17,8 @@ export default hopeTheme({
       displayFooter: true,
       blog: {
         name: "MangoJellyPudding",
-        description: "Information Technology undergraduate student,<br>passionate about the game called coding",
+        description:
+          "Information Technology undergraduate student,<br>passionate about the game called coding",
         intro: "intro",
         medias: {
           Discord: "https://discord.com/invite/SCAfRyAVnR",
@@ -72,7 +73,12 @@ export default hopeTheme({
 
     blog: {
       filter: ({ frontmatter, filePathRelative }) =>
-        !!(frontmatter.article ?? (!!filePathRelative && !frontmatter.home && frontmatter.index !== false)),
+        !!(
+          frontmatter.article ??
+          (!!filePathRelative &&
+            !frontmatter.home &&
+            frontmatter.index !== false)
+        ),
     },
 
     components: {
