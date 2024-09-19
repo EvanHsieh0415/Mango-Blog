@@ -1,5 +1,0 @@
-
-User-agent:*
-Disallow:
-
-Sitemap: https://mango-blog.pages.dev/sitemap.xml
