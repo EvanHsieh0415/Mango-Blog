@@ -3,6 +3,7 @@ order: 10
 title: 課程介紹
 footer: "作者：D11219121"
 author: D11219121
+isOriginal: true
 category:
   - 學習筆記 - 1131_嵌入式系統概論
 tag:

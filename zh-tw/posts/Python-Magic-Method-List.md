@@ -1,16 +1,17 @@
 ---
-icon: code
+icon: fa-brands fa-python
+isOriginal: true
 category:
-- 程式設計
-- Python
+  - 程式設計
+  - Python
 tag:
-- Python
-- 魔術方法
+  - Python
+  - 魔術方法
 ---
 
 # Python 魔術方法列表
 
-## Building Class｜構造類別
+## Building Class ｜構造類別
 
 | Method Name            | Symbol       | Description |
 | ---------------------- | ------------ | ----------- |
@@ -19,7 +20,7 @@ tag:
 | `__del__(self)`        | `del self`   | 刪除        |
 | `__call__(self, [...)` | `self([...)` | 調用自身    |
 
-## Attribute｜屬性
+## Attribute ｜屬性
 
 | Method Name                     | Symbol             | Description |
 | ------------------------------- | ------------------ | ----------- |
@@ -27,7 +28,7 @@ tag:
 | `__setattr__(self, key, value)` | `self.key = value` | 設定屬性    |
 | `__delattr__(self, key)`        | `del self.key`     | 刪除屬性    |
 
-## Boolean Operation｜布林值
+## Boolean Operation ｜布林值
 
 | Method Name            | Symbol          | Description        |
 | ---------------------- | --------------- | ------------------ |
@@ -39,7 +40,7 @@ tag:
 | `__gt__(self, other)`  | `self > other`  | 大於               |
 | `__ge__(self, other)`  | `self >= other` | 大於等於（不小於） |
 
-## Math Operation｜數學運算符
+## Math Operation ｜數學運算符
 
 | Method Name                 | Symbol                               | Description      |
 | --------------------------- | ------------------------------------ | ---------------- |
@@ -57,7 +58,7 @@ tag:
 | `__or__(self, other)`       | `self \| other`                      | 或（位元運算）   |
 | `__xor__(self, other)`      | `self ^ other`                       | 異或（位元運算） |
 
-## Right Math Operation｜被動數學運算符
+## Right Math Operation ｜被動數學運算符
 
 | Method Name                  | Symbol          | Description |
 | ---------------------------- | --------------- | ----------- |
@@ -74,7 +75,7 @@ tag:
 | `__ror__(self, other)`       | `other \| self` | 被或        |
 | `__rxor__(self, other)`      | `other ^ self`  | 被異或      |
 
-## Assign Value Operation｜賦值數學運算符
+## Assign Value Operation ｜賦值數學運算符
 
 | Method Name                  | Symbol           | Description        |
 | ---------------------------- | ---------------- | ------------------ |
@@ -91,7 +92,7 @@ tag:
 | `__ior__(self, other)`       | `self \|= other` | 自或（位元運算）   |
 | `__ixor__(self, other)`      | `self ^= other`  | 自異或（位元運算） |
 
-## Unary Operation｜一元運算符
+## Unary Operation ｜一元運算符
 
 | Method Name        | Symbol      | Description    |
 | ------------------ | ----------- | -------------- |
@@ -100,7 +101,7 @@ tag:
 | `__abs__(self)`    | `abs(self)` | 絕對值         |
 | `__invert__(self)` | `~self`     | 逆（位元運算） |
 
-## Type Conversion｜類型轉換
+## Type Conversion ｜類型轉換
 
 | Method Name           | Symbol            | Description |
 | --------------------- | ----------------- | ----------- |
@@ -114,14 +115,14 @@ tag:
 | `__str__(self)`       | `str(self)`       | 字串        |
 | `__format__(self)`    | `f"{}"`           |             |
 
-## Context Manager｜上下文管理器
+## Context Manager ｜上下文管理器
 
 | Method Name                                    | Symbol    | Description      |
 | ---------------------------------------------- | --------- | ---------------- |
 | `__enter__(self)`                              | 1. <br>2. | 進入上下文管理器 |
 | `__exit__(self, exctype, excvalue, trackback)` | 1. <br>2. | 退出上下文管理器 |
 
-## Container｜容器
+## Container ｜容器
 
 | Method Name                     | Symbol                            | Description     |
 | ------------------------------- | --------------------------------- | --------------- |

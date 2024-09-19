@@ -1,5 +1,6 @@
 ---
 icon: gamepad
+isOriginal: true
 ---
 
 # 遊戲社交專欄

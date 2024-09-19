@@ -71,15 +71,7 @@ export default hopeTheme({
       switchLocale: "modal",
     },
 
-    blog: {
-      filter: ({ frontmatter, filePathRelative }) =>
-        !!(
-          frontmatter.article ??
-          (!!filePathRelative &&
-            !frontmatter.home &&
-            frontmatter.index !== false)
-        ),
-    },
+    blog: true,
 
     components: {
       components: ["Badge", "VPCard", "PDF"],

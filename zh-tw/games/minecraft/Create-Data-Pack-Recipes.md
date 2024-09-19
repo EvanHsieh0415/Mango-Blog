@@ -1,10 +1,11 @@
 ---
 icon: cube
+isOriginal: true
 category: Minecraft
 tag:
-- 動力機械
-- 模組
-- 資料包
+  - 動力機械
+  - 模組
+  - 資料包
 ---
 
 # 動力機械資料包配方
@@ -25,13 +26,14 @@ tag:
 | 手         | [手動使用物品](#手動使用物品) | `create:item_application`    |
 | 砂紙       | [砂紙打磨](#砂紙打磨)         | `create:sandpaper_polishing` |
 | 動力合成器 | [機械製造](#機械製造)         | `create:mechanical_crafting` |
-| *          | [序列組裝](#序列組裝)         | `create:sequenced_assembly`  |
+| \*         | [序列組裝](#序列組裝)         | `create:sequenced_assembly`  |
 
 ## 配方類型
 
 ### 批次喚魂
 
 相關方塊：
+
 - `create:encased_fan`
 - `#create:fan_processing_catalysts/haunting`
 
@@ -44,6 +46,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:haunting",
@@ -59,11 +62,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 批次洗滌
 
 相關方塊：
+
 - `create:encased_fan`
 - `#create:fan_processing_catalysts/washing`
 
@@ -76,6 +81,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:splashing",
@@ -91,11 +97,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 研磨
 
 相關方塊：
+
 - `create:milling_stone`
 
 ```json
@@ -108,6 +116,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:milling",
@@ -124,11 +133,13 @@ tag:
   "processingTime": 200
 }
 ```
+
 :::
 
 ### 粉碎
 
 相關方塊：
+
 - `create:crushing_wheel`
 
 ```json
@@ -141,6 +152,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:crushing",
@@ -162,11 +174,13 @@ tag:
   "processingTime": 150
 }
 ```
+
 :::
 
 ### 壓塑
 
 相關方塊：
+
 - `create:mechanical_press`
 - `create:basin`
 
@@ -180,6 +194,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:compacting",
@@ -199,16 +214,16 @@ tag:
       "nbt": {}
     }
   ],
-  "results": [
-    { "item": "minecraft:andesite" }
-  ]
+  "results": [{ "item": "minecraft:andesite" }]
 }
 ```
+
 :::
 
 ### 金屬鍛造
 
 相關方塊：
+
 - `create:mechanical_press`
 - `create:depot` / `create:belt_connector`
 
@@ -221,6 +236,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:pressing",
@@ -236,11 +252,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 混合攪拌
 
 相關方塊：
+
 - `create:mechanical_mixer`
 - `create:basin`
 
@@ -259,6 +277,7 @@ tag:
   1.0 = 100%
 
 :::details 範例
+
 ```json
 {
   "type": "create:mixing",
@@ -277,11 +296,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 分液
 
 相關方塊：
+
 - `create:item_drain`
 
 ```json
@@ -293,6 +314,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:emptying",
@@ -312,11 +334,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 灌注
 
 相關方塊：
+
 - `create:spout`
 - `create:depot` / `create:belt_connector`
 
@@ -329,6 +353,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:filling",
@@ -349,11 +374,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 切割
 
 相關方塊：
+
 - `create:mechanical_saw`
 
 ```json
@@ -366,6 +393,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:cutting",
@@ -382,11 +410,13 @@ tag:
   "processingTime": 50
 }
 ```
+
 :::
 
 ### 使用
 
 相關方塊：
+
 - `create:deployer`
 - `create:depot` / `create:belt_connector`
 
@@ -399,6 +429,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:deploying",
@@ -410,11 +441,10 @@ tag:
       "tag": "minecraft:planks"
     }
   ],
-  "results": [
-    { "item": "create:cogwheel" }
-  ]
+  "results": [{ "item": "create:cogwheel" }]
 }
 ```
+
 :::
 
 ### 手動使用物品
@@ -428,6 +458,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:sandpaper_polishing",
@@ -443,11 +474,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 砂紙打磨
 
 相關物品
+
 - `create:sand_paper` / `create:red_sand_paper`
 
 ```json
@@ -459,6 +492,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:sandpaper_polishing",
@@ -474,11 +508,13 @@ tag:
   ]
 }
 ```
+
 :::
 
 ### 機械製造
 
 相關方塊：
+
 - `create:mechanical_crafter`
 
 ```json
@@ -492,6 +528,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:mechanical_crafting",
@@ -520,11 +557,13 @@ tag:
   "acceptMirrored": false
 }
 ```
+
 :::
 
 ### 序列組裝
 
 相關方塊：
+
 - `create:belt_connector` / `create:`
 - `create:deployer`（使用 `deploying` 配方時）
 - `create:mechanical_press`（使用 `pressing` 配方時）
@@ -543,6 +582,7 @@ tag:
 ```
 
 :::details 範例
+
 ```json
 {
   "type": "create:sequenced_assembly",
@@ -641,6 +681,7 @@ tag:
   }
 }
 ```
+
 :::
 
 ---

@@ -1,10 +1,11 @@
 ---
 icon: language
+isOriginal: true
 category: Minecraft
 tag:
-- Embeddium
-- Sodium
-- 文章翻譯
+  - Embeddium
+  - Sodium
+  - 文章翻譯
 ---
 
 # Embeddium & Sodium 文章翻譯
@@ -16,6 +17,7 @@ tag:
 今天是悲傷的一天。
 
 昨晚，在 <t:1707364980:t>，JellySquid 在 CaffeineMC Discord 的 #dev-sodium 頻道發了一些消息，引發了我們（我和 <@348696829648437249>）與 JellySquid 之間的爭論。在 <t:1707367620:t>，我們兩人因以下兩個主要原因被禁言：
+
 - 我們對 Sodium 及整體 CaffeineMC 管理的批評
 - 在私人頻道中關於 Sodium 可能硬分叉的討論。沒有證據表明我們打算進行硬分叉，在爭論中我們明確表示希望避免硬分叉
 
@@ -23,7 +25,7 @@ tag:
 
 ---
 
-我們不想走硬分叉這條路（我們仍然不想）。我們一直在探索每一個可能的途徑，以避免這種情況，並以文明的方式解決我們的擔憂。不幸的是，JellySquid 已經明確表示，她打算切斷所有選項，除了硬分叉或放棄 Embeddium。我們認為放棄 Embeddium 會對社群不利，因此我們別無選擇。請享受隨附的 Embeddium for Fabric 測試版本。它包含了 Embeddium on Forge 的所有功能（包括半透明排序）（除了特定於 Forge 的功能），加上完整的* FRAPI 支持——不需要 Indium！
+我們不想走硬分叉這條路（我們仍然不想）。我們一直在探索每一個可能的途徑，以避免這種情況，並以文明的方式解決我們的擔憂。不幸的是，JellySquid 已經明確表示，她打算切斷所有選項，除了硬分叉或放棄 Embeddium。我們認為放棄 Embeddium 會對社群不利，因此我們別無選擇。請享受隨附的 Embeddium for Fabric 測試版本。它包含了 Embeddium on Forge 的所有功能（包括半透明排序）（除了特定於 Forge 的功能），加上完整的\* FRAPI 支持——不需要 Indium！
 
 \*我們還沒有進行非常徹底的測試（我們已經確認官方的 FRAPI 測試模組、AE2 外牆、Modern Industrialization 和 Continuity Emissive Textures 都可以正常工作）。請讓我們知道如果發現任何 bug，以便我們修復它們。
 

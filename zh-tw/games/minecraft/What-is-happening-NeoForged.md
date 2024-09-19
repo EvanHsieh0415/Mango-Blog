@@ -1,11 +1,12 @@
 ---
 icon: language
 category: Minecraft
+isOriginal: true
 tag:
-- NeoForged
-- NeoForge
-- Forge
-- 文章翻譯
+  - NeoForged
+  - NeoForge
+  - Forge
+  - 文章翻譯
 ---
 
 # What is happening? - NeoForged 文章翻譯

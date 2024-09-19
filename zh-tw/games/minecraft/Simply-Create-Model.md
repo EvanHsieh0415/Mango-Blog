@@ -9,6 +9,7 @@ author:
   - name: 亚龙糖浆
     url: https://space.bilibili.com/454794521/
   - 芒果凍布丁
+isOriginal: true
 cover: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/img/pack-819x512.png?raw=true
 banner: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/img/pack-819x512.png?raw=true
 ---

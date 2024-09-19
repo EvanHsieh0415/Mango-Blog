@@ -1,9 +1,10 @@
 ---
 icon: cube
+isOriginal: true
 category: Minecraft
 tag:
-- 個人作品
-- 資料包
+  - 個人作品
+  - 資料包
 hover: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/icon/icon%20400x400.png?raw=true
 banner: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/icon/icon%20400x400.png?raw=true
 ---
@@ -19,8 +20,8 @@ banner: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/bl
 ## 說明
 
 此資料包新增了原礦塊的熔爐及高爐配方  
-可將原礦塊以9倍慢的方式燒成礦物塊  
-經驗也會以9倍給予  
+可將原礦塊以 9 倍慢的方式燒成礦物塊  
+經驗也會以 9 倍給予
 
 ## 支援的模組
 
@@ -43,13 +44,13 @@ banner: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/bl
 ## 畫廊
 
 > 熔爐  
-> ![][gallery-0]  
+> ![][gallery-0]
 
 > 高爐  
-> ![][gallery-1]  
+> ![][gallery-1]
 
 > 模組支援  
-> ![][gallery-2]  
+> ![][gallery-2]
 
 ---
 
