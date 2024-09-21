@@ -17,8 +17,7 @@ export default hopeTheme({
       displayFooter: true,
       blog: {
         name: "MangoJellyPudding",
-        description:
-          "Information Technology undergraduate student,<br>passionate about the game called coding",
+        description: "Information Technology undergraduate student,<br>passionate about the game called coding",
         intro: "intro",
         medias: {
           Discord: "https://discord.com/invite/SCAfRyAVnR",
@@ -78,15 +77,11 @@ export default hopeTheme({
     },
 
     mdEnhance: {
-      alert: true,
       align: true,
       attrs: true,
       codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
       include: true,
       mark: true,
       plantuml: true,
