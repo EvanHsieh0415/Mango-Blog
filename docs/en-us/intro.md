@@ -20,25 +20,27 @@ Passionate about programming, my strongest language is Python
 ## Github Status
 
 <table>
-  <tr>
-    <td colspan="2">
-      <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/0-profile-details.svg">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/1-repos-per-language.svg">
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/2-most-commit-language.svg">
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/3-stats.svg">
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/4-productive-time.svg">
-    </td>
-  </tr>
+  <tbody>
+    <tr>
+      <td colspan="2">
+        <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/0-profile-details.svg">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/1-repos-per-language.svg">
+      </td>
+      <td>
+        <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/2-most-commit-language.svg">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/3-stats.svg">
+      </td>
+      <td>
+        <img src="https://raw.githubusercontent.com/EvanHsieh0415/github-profile-summary-cards/master/profile-summary-card-output/github_dark/4-productive-time.svg">
+      </td>
+    </tr>
+  </tbody>
 </table>

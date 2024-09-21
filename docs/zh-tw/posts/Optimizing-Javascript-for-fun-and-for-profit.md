@@ -30,7 +30,7 @@ tag:
 
 JavaScript 讓字串比較的實際成本容易被隱藏。如果你在 C 語言中需要比較字串，你會使用 `stdcmp(a, b)` 函數。而在 JavaScript 中，你會使用 `===` 進行比較，因此你不會直接看到字串比較的細節，但其實它仍然存在。字串比較通常（但並非總是）會需要將字串中的每個字符與另一個字串中的字符進行比較；字串比較的時間複雜度為 O(n)。一個常見的 JavaScript 模式是使用字串作為枚舉（enum），但隨著 TypeScript 的普及，這應該很容易避免，因為枚舉在 TypeScript 中預設是整數。
 
-<table><td>
+<table><tbody><tr><td>
 
 ```js
 // No
@@ -50,4 +50,4 @@ enum Position {
 }
 ```
 
-</td></table>
+</td></tr></tbody></table>
