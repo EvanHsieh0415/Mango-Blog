@@ -15,7 +15,7 @@ export default defineUserConfig({
       description: "MangoJellyPudding's personal blog, hosted on CloudFlare Page",
     },
     "/zh-tw/": {
-      lang: "zh-Hant",
+      lang: "zh-TW",
       title: "芒果的部落格",
       description: "芒果凍布丁的個人部落格，架設於 CloudFlare Page 上",
     },
