@@ -4,7 +4,7 @@ import locales from "./theme/locales.js";
 export default hopeTheme(
   {
     // Basic
-    hostname: "mango-blog.pages.dev",
+    hostname: "https://mango-blog.pages.dev",
     favicon: "https://avatars.githubusercontent.com/u/74277414",
     license: "AGPL-3.0",
     // hotReload: true, // enable it to preview all changes in time
