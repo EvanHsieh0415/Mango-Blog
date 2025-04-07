@@ -1,26 +1,25 @@
-<script setup>
-import { computed } from "vue";
-
-const props = defineProps({
-  name: {
-    type: String,
-    required: true,
-  },
-  path: {
-    type: String,
-    required: true,
-  }
-});
-
-const aHref = computed(() => {
-  return `https://github.com/${props.path}`;
-});
-
-const ImageAlt = computed(() => {
-  return `${props.name} Github Badge`;
-});
-</script>
-
 <template>
-  <a :href="aHref" class="custom-badge"><img src="https://img.shields.io/badge/Github-313338?style=for-the-badge&logo=Github" :alt="ImageAlt" /></a>
+  <a :href="aHref" class="custom-badge" target="_blank">
+    <img src="https://img.shields.io/badge/Github-313338?style=for-the-badge&logo=Github" :alt="ImageAlt" />
+  </a>
 </template>
+
+<script lang="ts">
+export default {
+  props: {
+    name: String,
+    path: {
+      type: String,
+      required: true,
+    },
+  },
+  computed: {
+    aHref() {
+      return `https://github.com/${this.path}`;
+    },
+    ImageAlt() {
+      return `${this.name ?? this.path} GitHub Badge`;
+    },
+  },
+};
+</script>

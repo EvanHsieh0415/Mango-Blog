@@ -1,62 +1,102 @@
 import { hopeTheme } from "vuepress-theme-hope";
-
-import { enUsNavbar, zhTwNavbar } from "./navbar/index.js";
-import { enUsSidebar, zhTwSidebar } from "./sidebar/index.js";
+import locales from "./theme/locales.js";
 
 export default hopeTheme(
   {
-    hostname: "https://mango-blog.pages.dev/",
-    iconAssets: "fontawesome-with-brands",
-    logo: "https://avatars.githubusercontent.com/u/74277414",
-    repo: "EvanHsieh0415/Mango-Blog",
+    // Basic
+    hostname: "mango-blog.pages.dev",
     favicon: "https://avatars.githubusercontent.com/u/74277414",
+    license: "AGPL-3.0",
+    // hotReload: true, // enable it to preview all changes in time
+    locales,
 
-    locales: {
-      "/en-us/": {
-        navbar: enUsNavbar,
-        sidebar: enUsSidebar,
-        displayFooter: true,
-        blog: {
-          name: "MangoJellyPudding",
-          description: "Information Technology undergraduate student,<br>passionate about the game called coding",
-          intro: "intro",
-          medias: {
-            Discord: "https://discord.com/invite/SCAfRyAVnR",
-            GitHub: "https://github.com/EvanHsieh0415",
-            Twitter: "https://twitter.com/evan_mango",
-            Youtube: "https://www.youtube.com/@YTMango",
-          },
-        },
-        metaLocales: {
-          editLink: "Edit this page on GitHub",
-        },
-      },
-
-      "/zh-tw/": {
-        navbar: zhTwNavbar,
-        sidebar: zhTwSidebar,
-        displayFooter: true,
-        blog: {
-          name: "芒果凍布丁",
-          description: "資訊科技系大學生，<br>熱衷於名為程式設計的遊戲中",
-          intro: "intro",
-          medias: {
-            BiliBili: "https://space.bilibili.com/430008973",
-            Discord: "https://discord.com/invite/SCAfRyAVnR",
-            GitHub: "https://github.com/EvanHsieh0415",
-            Twitter: "https://twitter.com/evan_mango",
-            Youtube: "https://www.youtube.com/@YTMango",
-          },
-        },
-        metaLocales: {
-          editLink: "在 GitHub 上編輯此頁",
-        },
-      },
-    },
-
+    // Feature
     encrypt: {
       config: {
         "/zh-tw/test": ["1234"],
+      },
+    },
+
+    // Layouts
+    // - Navbar
+    // navbarLayout: {
+    //   start: ["Brand", "Language", "Search"],
+    //   center: ["Links"],
+    //   end: ["Repo", "Outlook"],
+    // },
+    logo: "https://avatars.githubusercontent.com/u/74277414",
+    repo: "EvanHsieh0415/Mango-Blog",
+
+    // - Metadata
+    lastUpdated: true,
+    contributors: true,
+    editLink: true,
+    docsRepo: "EvanHsieh0415/Mango-Blog",
+    docsBranch: "main",
+    docsDir: "docs",
+
+    // - Footer
+    copyright: "Copyright © 2025 EvanHsieh0415",
+    displayFooter: true,
+
+    // Appearance
+    darkmode: "auto",
+    externalLinkIcon: false,
+    fullscreen: true,
+    pure: true,
+    focus: false,
+
+    // i18n
+    blogLocales: {
+      empty: "",
+    },
+
+    // Markdown
+    markdown: {
+      alert: true,
+      hint: true,
+      align: true,
+      attrs: true,
+      codeTabs: true,
+      component: true,
+      demo: true,
+      figure: true,
+      gfm: true,
+      imgLazyload: true,
+      imgSize: true,
+      include: true,
+      mark: true,
+      plantuml: true,
+      spoiler: true,
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
+        },
+      ],
+      sub: true,
+      sup: true,
+      tabs: true,
+      tasklist: true,
+      vPre: true,
+
+      highlighter: {
+        type: "shiki",
+        theme: "one-dark-pro",
+        collapsedLines: false,
+        notationDiff: true,
+        notationFocus: true,
+        notationHighlight: true,
+        notationErrorLevel: true,
+        notationWordHighlight: true,
+        whitespace: "trailing",
       },
     },
 
@@ -68,51 +108,29 @@ export default hopeTheme(
         switchLocale: "modal",
       },
 
-      markdownHint: {
-        alert: true,
-      },
-      markdownImage: {
-        figure: true,
-        lazyload: true,
-        mark: true,
-        obsidianSize: true,
-        size: true,
-      },
-
       blog: true,
 
       components: {
-        components: ["Badge", "VPCard", "PDF"],
+        components: ["Badge", "VPCard", "VidStack", "SiteInfo", "VPBanner"],
       },
 
-      mdEnhance: {
-        align: true,
-        attrs: true,
-        codetabs: true,
-        component: true,
-        demo: true,
-        include: true,
-        mark: true,
-        plantuml: true,
-        spoiler: true,
-        stylize: [
-          {
-            matcher: "Recommended",
-            replacer: ({ tag }) => {
-              if (tag === "em")
-                return {
-                  tag: "Badge",
-                  attrs: { type: "tip" },
-                  content: "Recommended",
-                };
-            },
+      icon: {
+        prefix: "fa6-solid:",
+      },
+
+      search: {
+        locales: {
+          "/zh-tw/": {
+            placeholder: "搜尋",
           },
-        ],
-        sub: true,
-        sup: true,
-        tabs: true,
-        tasklist: true,
-        vPre: true,
+        },
+        maxSuggestions: 20,
+        getExtraFields: (page) =>
+          (<string[]>page.frontmatter.tags ?? []).concat(<string[]>page.frontmatter.categories ?? []),
+      },
+
+      git: {
+        changelog: true,
       },
     },
   },

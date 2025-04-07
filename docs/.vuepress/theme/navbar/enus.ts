@@ -1,20 +1,20 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const enUsNavbar = navbar([
-  "en-us/",
+export const enusNavbar = navbar([
+  "/",
   {
     text: "Articles",
     icon: "pen-to-square",
-    link: "en-us/posts/",
+    link: "/posts/",
   },
   {
     text: "Learning Notes",
     icon: "pen-to-square",
-    link: "en-us/studing/",
+    link: "/studing/",
   },
   {
     text: "Game Column",
     icon: "gamepad",
-    link: "en-us/games/",
+    link: "/games/",
   },
 ]);

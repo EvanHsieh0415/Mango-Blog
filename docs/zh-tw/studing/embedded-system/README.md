@@ -1,6 +1,6 @@
 ---
-index: false
-article: false
+dir:
+  link: true
 footer: "作者：D11219121"
 author: D11219121
 isOriginal: true

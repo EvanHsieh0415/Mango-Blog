@@ -1,8 +1,8 @@
 ---
 icon: home
 title: Articles
-index: false
-article: false
+dir:
+  link: true
 isOriginal: true
 ---
 

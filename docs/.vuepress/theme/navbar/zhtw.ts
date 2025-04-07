@@ -1,20 +1,20 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const zhTwNavbar = navbar([
-  "zh-tw/",
+export const zhtwNavbar = navbar([
+  "/zh-tw/",
   {
     text: "文章",
     icon: "pen-to-square",
-    link: "zh-tw/posts/",
+    link: "/zh-tw/posts/",
   },
   {
     text: "學習筆記",
     icon: "pen-to-square",
-    link: "zh-tw/studing/",
+    link: "/zh-tw/studing/",
   },
   {
     text: "遊戲專欄",
     icon: "gamepad",
-    link: "zh-tw/games/",
+    link: "/zh-tw/games/",
   },
 ]);
