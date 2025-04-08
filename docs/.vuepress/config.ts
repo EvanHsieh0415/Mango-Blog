@@ -9,7 +9,7 @@ export default defineUserConfig({
   base: "/",
 
   locales: {
-    "/en-us/": {
+    "/": {
       lang: "en-US",
       title: "Mango's Blog",
       description: "MangoJellyPudding's personal blog, hosted on CloudFlare Page",

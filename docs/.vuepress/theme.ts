@@ -8,6 +8,7 @@ export default hopeTheme(
     favicon: "https://avatars.githubusercontent.com/u/74277414",
     license: "AGPL-3.0",
     // hotReload: true, // enable it to preview all changes in time
+    // author: "MangoJellyPudding",
     locales,
 
     // Feature
@@ -131,6 +132,9 @@ export default hopeTheme(
 
       git: {
         changelog: true,
+        contributors: true,
+        createdTime: true,
+        updatedTime: true,
       },
     },
   },
