@@ -1,4 +1,5 @@
 ---
+title: 羊毛調整資料包
 icon: cube
 category: Minecraft
 isOriginal: true
@@ -7,14 +8,13 @@ tag:
   - 資料包
 cover: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/main/img/icon/new_icon.png?raw=true
 banner: https://github.com/Mango-Minecraft-Project/WoolRecipes-DataPack/blob/main/img/icon/new_icon.png?raw=true
----
-
-# 羊毛調整資料包
-
-:::center
-<BadgeGithub name="羊毛調整資料包" path="Mango-Minecraft-Project/WoolRecipes-DataPack"/> <BadgeModrinth name="羊毛調整資料包" path="/datapack/wool-recipes"/> <BadgeMcmod name="羊毛調整資料包" path="7623"/>
-:::
-
+layout: AddonPage
+mod:
+  name: 羊毛調整資料包
+  author: 芒果凍布丁
+  Modrinth: project/SKFVc5Xz
+  GitHub: Mango-Minecraft-Project/WoolRecipes-DataPack
+  Mcmod: class/7623
 ---
 
 ## 說明

@@ -2,9 +2,9 @@
 home: true
 layout: BlogHome
 icon: home
-title: Homepage
+title: Home
 heroImage: https://avatars.githubusercontent.com/u/74277414
-heroText: MangoJellyPudding's Blog
+heroText: Mango Jelly Pudding's Blog
 heroFullScreen: true
-tagline: Coding is a game that belongs to me.
+tagline: Programming is a game that belongs to me
 ---

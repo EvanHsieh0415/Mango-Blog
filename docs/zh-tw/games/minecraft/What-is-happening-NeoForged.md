@@ -1,4 +1,5 @@
 ---
+title: What is happening? - NeoForged 文章翻譯
 icon: language
 category: Minecraft
 isOriginal: true
@@ -9,11 +10,10 @@ tag:
   - 文章翻譯
 ---
 
-# What is happening? - NeoForged 文章翻譯
-
-> [!tip]
-> 備註：全篇使用 [ChatGPT](https://chatgpt.com/) 翻譯  
-> 訊息連結：[What is happening? - NeoForged](https://neoforged.net/news/theproject/)
+:::tip
+備註：全篇使用 [ChatGPT](https://chatgpt.com/) 翻譯  
+訊息連結：[What is happening? - NeoForged](https://neoforged.net/news/theproject/)
+:::
 
 ## 這裡發生了什麼事？
 

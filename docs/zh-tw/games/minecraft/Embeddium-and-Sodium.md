@@ -10,9 +10,10 @@ tag:
 
 # Embeddium & Sodium 文章翻譯
 
-> [!tip]
-> 備註：全篇使用 [ChatGPT](https://chatgpt.com/) 翻譯  
-> 訊息連結：[Discord - TauMC](https://discord.com/channels/1140803582208245810/1146926042414587924/1205166001214459984)
+:::tip
+備註：全篇使用 [ChatGPT](https://chatgpt.com/) 翻譯  
+訊息連結：[Discord - TauMC](https://discord.com/channels/1140803582208245810/1146926042414587924/1205166001214459984)
+:::
 
 今天是悲傷的一天。
 

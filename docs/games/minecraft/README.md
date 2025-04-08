@@ -1,8 +1,8 @@
 ---
 icon: list
 title: Minecraft
-index: false
-article: false
+dir:
+  link: true
 ---
 
 <Catalog/>

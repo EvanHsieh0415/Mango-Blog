@@ -1,6 +1,6 @@
 <template>
   <a :href="aHref" class="custom-badge" target="_blank">
-    <img src="https://img.shields.io/badge/Wiki-313338?style=for-the-badge&logo=wikipedia" :alt="ImageAlt" />
+    <img src="https://img.shields.io/badge/Github-313338?style=for-the-badge&logo=Github" :alt="ImageAlt" />
   </a>
 </template>
 
@@ -15,10 +15,10 @@ export default {
   },
   computed: {
     aHref() {
-      return `https://wiki.mcmod.cn/${this.path}`;
+      return `https://github.com/${this.path}`;
     },
     ImageAlt() {
-      return `${this.name ?? this.path} Wiki Badge`;
+      return `${this.name ?? this.path} GitHub Badge`;
     },
   },
 };

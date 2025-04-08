@@ -12,12 +12,20 @@ author:
 isOriginal: true
 cover: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/img/pack-819x512.png?raw=true
 banner: https://github.com/Mango-Minecraft-Project/SimplyCreateModel/blob/main/img/pack-819x512.png?raw=true
+layout: AddonPage
+mod:
+  name: 簡單動力
+  author: 芒果凍布丁
+  Modrinth: project/yqmcXBDx
+  GitHub: Mango-Minecraft-Project/SimplyCreateModel
+  Mcmod: class/15909
 ---
 
 # 簡單動力
 
-:::center
-<BadgeGithub name="簡單動力" path="Mango-Minecraft-Project/SimplyCreateModel"/> <BadgeModrinth name="簡單動力 資源包" path="resourcepack/simply-create-model"/> <BadgeModrinth name="簡單動力 模組" path="mod/simply-create-model-mod"/> <BadgeMcmod name="簡單動力" path="15909  "/>
+:::info
+資源包版本： <BadgeModrinth name="簡單動力 資源包" path="resourcepack/simply-create-model"/>  
+模組版本： <BadgeModrinth name="簡單動力 模組" path="mod/simply-create-model-mod"/>
 :::
 
 ---

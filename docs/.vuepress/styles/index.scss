@@ -4,26 +4,24 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-.external-link-icon .theme-hope-content a.custom-badge[href*="://"]:not(.no-external-link-icon)::after
-{
-  content: none;
-}
-
 mark {
   background: --badge-warning-color;
 }
 
-// todo 讓表格自適應寬度
-// table * {
-//   width: 100%;
-//   table-layout: fixed;
-//   table-layout: automatic;
-//   word-break: break-all;
-//   word-wrap: break-word;
-//   // * {
-//   //   td, th {
-//   //     min-width: 100%;
-//   //     border-collapse: collapse
-//   //   }
-//   // }
-// }
+p {
+  text-align: start !important;
+}
+
+details tbody tr:nth-child(2n) {
+  background: rgb(29, 30, 33);
+  transition: background-color var(--vp-t-color);
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+#toc {
+  min-width: 15rem;
+  max-width: 20rem;
+}

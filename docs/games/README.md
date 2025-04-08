@@ -1,8 +1,8 @@
 ---
 icon: list
 title: Game Column
-index: false
-article: false
+dir:
+  link: true
 isOriginal: true
 ---
 
