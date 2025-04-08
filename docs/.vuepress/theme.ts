@@ -103,9 +103,6 @@ export default hopeTheme(
 
     plugins: {
       redirect: {
-        config: {
-          "/": "/en-us/",
-        },
         switchLocale: "modal",
       },
 
@@ -116,7 +113,7 @@ export default hopeTheme(
       },
 
       icon: {
-        prefix: "fa6-solid:",
+        assets: "fontawesome-with-brands",
       },
 
       search: {

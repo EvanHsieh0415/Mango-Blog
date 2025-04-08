@@ -1,9 +1,8 @@
 ---
+title: 遊戲社交專欄
 icon: gamepad
 isOriginal: true
 ---
-
-# 遊戲社交專欄
 
 這裡列出所有我現在 / 曾經遊玩過的遊戲
 

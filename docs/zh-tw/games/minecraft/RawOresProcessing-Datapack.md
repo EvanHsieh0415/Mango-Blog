@@ -1,4 +1,5 @@
 ---
+title: 原礦處理資料包
 icon: cube
 isOriginal: true
 category: Minecraft
@@ -7,14 +8,14 @@ tag:
   - 資料包
 hover: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/icon/icon%20400x400.png?raw=true
 banner: https://github.com/Mango-Minecraft-Project/RawOresProcessing-DataPack/blob/main/img/icon/icon%20400x400.png?raw=true
----
-
-# 原礦處理資料包
-
-:::center
-<BadgeGithub name="原礦處理資料包" path="Mango-Minecraft-Project/RawOresProcessing-Datapack"/> <BadgeModrinth name="原礦處理資料包" path="datapack/raw-ores-processing"/> <BadgeMcmod name="原礦處理資料包" path="7643"/>
-:::
-
+layout: AddonPage
+mod:
+  name: 原礦處理資料包
+  author: 芒果凍布丁
+  CurseForge: 677549
+  Modrinth: project/eNdleRJp
+  GitHub: Mango-Minecraft-Project/RawOresProcessing-DataPack
+  Mcmod: class/7643
 ---
 
 ## 說明

@@ -1,4 +1,5 @@
 ---
+title: Python 魔術方法列表
 icon: fa-brands fa-python
 isOriginal: true
 category:
@@ -8,8 +9,6 @@ tag:
   - Python
   - 魔術方法
 ---
-
-# Python 魔術方法列表
 
 ## Building Class ｜構造類別
 

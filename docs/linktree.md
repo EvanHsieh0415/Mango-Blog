@@ -46,7 +46,7 @@ sidebar: false
 <VPCard
   title="MangoJellyPudding"
   desc="Modrinth"
-  logo="https://docs.modrinth.com/img/logo.svg"
+  logo="https://modrinth.com/favicon.ico"
   link="https://modrinth.com/user/MangoJellyPudding"
 />
 <VPCard
@@ -64,11 +64,11 @@ sidebar: false
 
 :::
 
-<style>
+<!-- <style>
   .vp-card-logo {
     border-radius: 0% !important;
   }
   .theme-container.no-sidebar.has-toc .vp-page {
     padding-inline-end: 0;
   }
-</style>
+</style> -->
