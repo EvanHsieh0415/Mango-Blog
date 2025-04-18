@@ -1,7 +1,8 @@
 ---
+title: 學習筆記
+icon: note-sticky
 dir:
   link: true
-title: 學習筆記
 isOriginal: true
 ---
 
