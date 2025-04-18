@@ -2,52 +2,37 @@
 title: 神秘代碼解碼
 ---
 
-<table>
-  <thead>
-    <tr>
-      <th>代碼</th>
-      <th>解碼</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><input id="code" name="code" /><br></td>
-      <td>
-        <button @click="NHentai" >NHentai</button>
-        <button @click="Pixiv" >PID</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<ClientOnly>
 
-<div v-if="url != 'unset'">
-  <h3>解碼結果</h3>
-  <a :href="url"><code>{{url}}</code></a>
-</div>
-<p v-else>請輸入代碼</p>
+| 類型        | <input v-model="code" />                          |
+| ----------- | ------------------------------------------------- |
+| Pixiv       | <a :href="pixiv"><code>{{pixiv}}</code></a>       |
+| Twitter / X | <a :href="twitter"><code>{{twitter}}</code></a>   |
+| Discord     | <a :href="discord"><code>{{discord}}</code></a>   |
+| NHentai     | <a :href="nhentai"><code>{{nhentai}}</code></a>   |
+| 18comic     | <a :href="_18comic"><code>{{_18comic}}</code></a> |
+</ClientOnly>
 
+<style scoped lang="scss">
+  input {
+    width: 100%;
+    border-radius: 4px;
+  }
+</style>
 
 <script lang="ts">
 export default {
   data() {
     return {
-      url: 'unset'
-    }
+      code: "",
+    };
   },
-  methods: {
-    factory(prefix: str) {
-      const code = document.getElementById('code').value
-      if (code.length === 0) {
-        return "unset"
-      }
-      return prefix.replace("{code}", code);
-    },
-    NHentai(event) {
-      this.url = this.factory('https://nhentai.net/g/{code}');
-    },
-    Pixiv(event) {
-      this.url = this.factory('https://www.pixiv.net/artworks/{code}');
-    }
-  }
-}
+  computed: {
+    pixiv() { return `https://www.pixiv.net/artworks/${this.code}`; },
+    twitter() { return `https://x.com/i/status/${this.code}`; },
+    discord() { return `https://discord.com/invite/${this.code}`; },
+    nhentai() { return `https://nhentai.net/g/${this.code}`; },
+    _18comic() { return `https://18comic.org/album/${this.code}`; },
+  },
+};
 </script>
