@@ -37,7 +37,7 @@ export default hopeTheme(
     docsDir: "docs",
 
     // - Footer
-    copyright: "Copyright © 2025 EvanHsieh0415",
+    copyright: "Copyright © 2024-2025 EvanHsieh0415",
     displayFooter: true,
 
     // Appearance
@@ -128,8 +128,8 @@ export default hopeTheme(
       },
 
       git: {
-        changelog: true,
-        contributors: true,
+        changelog: false,
+        contributors: false,
         createdTime: true,
         updatedTime: true,
       },

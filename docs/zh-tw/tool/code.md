@@ -2,6 +2,8 @@
 title: 神秘代碼解碼
 description: 這是一些網站的代碼轉換器，讓你可以快速地將代碼轉換為網址。
 icon: file-shield
+pageInfo: [ "Author", "Date" ]
+contributors: false
 ---
 
 <ClientOnly>
