@@ -34,7 +34,7 @@
 </style>
 
 <script lang="ts">
-import { usePageLang } from "vuepress/client";
+import { usePageLang, useRoutes } from "vuepress/client";
 
 export default {
   computed: {
