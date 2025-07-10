@@ -11,11 +11,11 @@ isOriginal: true
 
 ## 技能樹
 
-- <FontIcon icon="fa-brands fa-python"/> Python
-- <FontIcon icon="fa-brands fa-html5"/> HTML 5 / <FontIcon icon="fa-brands fa-js"/> JavaScript / <FontIcon icon="fa-brands fa-css3-alt"/> CSS 3
-- <FontIcon icon="fa-brands fa-node-js"/> NodeJS / <FontIcon icon="fa-brands fa-vuejs"/> VueJS
+- <VPIcon icon="fa-brands fa-python"/> Python
+- <VPIcon icon="fa-brands fa-html5"/> HTML 5 / <VPIcon icon="fa-brands fa-js"/> JavaScript / <VPIcon icon="fa-brands fa-css3-alt"/> CSS 3
+- <VPIcon icon="fa-brands fa-node-js"/> NodeJS / <VPIcon icon="fa-brands fa-vuejs"/> VueJS
 - C#
-- <FontIcon icon="fa-brands fa-php"/> PHP
+- <VPIcon icon="fa-brands fa-php"/> PHP
 
 ## Github 狀態
 

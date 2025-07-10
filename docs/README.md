@@ -1,6 +1,6 @@
 ---
 home: true
-layout: BlogHome
+layout: Blog
 icon: home
 title: Home
 heroImage: https://avatars.githubusercontent.com/u/74277414

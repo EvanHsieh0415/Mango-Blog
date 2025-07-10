@@ -1,10 +1,6 @@
 <template>
-  <div v-if="displayName.some((name) => frontmatter[name])" class="component-info-block">
-    <template v-for="name in displayName">
-      <div v-if="frontmatter[name]" :key="name">
-        {{ i18nText[name] }}<span v-html="specialConsumer(name)"></span>
-      </div>
-    </template>
+  <div v-if="infoList.length" class="component-info-block">
+    <div v-for="item in infoList" :key="item.key">{{ item.label }}<span v-html="item.content"></span></div>
   </div>
 </template>
 
@@ -25,48 +21,41 @@
 }
 </style>
 
-<script lang="ts">
-import { usePageLang } from "vuepress/client";
+<script setup lang="ts">
+import { usePageFrontmatter } from "vuepress/client";
+import { useLocaleConfig } from "@vuepress/helper/client";
+import { computed } from "vue";
 
-export default {
-  computed: {
-    frontmatter() {
-      return this.$page.frontmatter;
-    },
-    displayName() {
-      return ["source", "license", "idea"];
-    },
-    specialConsumer() {
-      return (name: string) => {
-        const text = this.frontmatter[name];
-        switch (name) {
-          case "source":
-          case "idea":
-            return `<a href="${text}" target="_blank" rel="noopener noreferrer">${text}</a>`;
-          default:
-            return text;
-        }
-      }
-    },
-    i18nText() {
-      return {
-        "en-US": {
-          source: "Original Article:",
-          license: "License: ",
-          idea: "Idea from: ",
-        },
-        "zh-CN": {
-          source: "原文：",
-          license: "许可：",
-          idea: "灵感来源：",
-        },
-        "zh-TW": {
-          source: "原文：",
-          license: "許可：",
-          idea: "靈感來源：",
-        },
-      }[usePageLang().value];
-    },
+const locale = useLocaleConfig({
+  "/": {
+    source: "Original Article:",
+    license: "License: ",
+    idea: "Idea from: ",
   },
-};
+  "/zh-cn/": {
+    source: "原文：",
+    license: "许可：",
+    idea: "灵感来源：",
+  },
+  "/zh-tw/": {
+    source: "原文：",
+    license: "許可：",
+    idea: "靈感來源：",
+  },
+}).value;
+
+const frontmatter = usePageFrontmatter().value;
+const displayName = ["source", "license", "idea"] as const;
+const infoList = computed(() =>
+  displayName
+    .filter((key) => frontmatter[key])
+    .map((key) => ({
+      key,
+      label: locale[key],
+      content:
+        key === "source" || key === "idea"
+          ? `<a href="${frontmatter[key]}" target="_blank" rel="noopener noreferrer">${frontmatter[key]}</a>`
+          : frontmatter[key],
+    }))
+);
 </script>

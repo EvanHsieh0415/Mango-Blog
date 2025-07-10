@@ -11,13 +11,14 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.20",
-    "@vuepress/plugin-redirect": "2.0.0-rc.91",
-    "@vuepress/plugin-search": "2.0.0-rc.91",
-    "sass": "^1.86.3",
+    "@vuepress/bundler-vite": "2.0.0-rc.24",
+    "@vuepress/helper": "2.0.0-rc.112",
+    "@vuepress/plugin-redirect": "2.0.0-rc.112",
+    "@vuepress/plugin-search": "2.0.0-rc.112",
+    "sass": "^1.89.2",
     "vidstack": "^1.12.13",
-    "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.20",
-    "vuepress-theme-hope": "2.0.0-rc.78"
+    "vue": "^3.5.17",
+    "vuepress": "2.0.0-rc.24",
+    "vuepress-theme-hope": "2.0.0-rc.94"
   }
 }

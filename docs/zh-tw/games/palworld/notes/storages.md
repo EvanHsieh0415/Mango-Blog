@@ -1,7 +1,7 @@
 ---
 title: 物品儲存
 layout: AddonPage
-source: https://forum.gamer.com.tw/C.php?bsn=71458&snA=1508
+idea: https://forum.gamer.com.tw/C.php?bsn=71458&snA=1508
 ---
 
 ::: note 遊戲版本
