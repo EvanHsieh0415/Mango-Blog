@@ -44,18 +44,18 @@ const locale = useLocaleConfig({
   },
 }).value;
 
-const frontmatter = usePageFrontmatter().value;
+const frontmatter = usePageFrontmatter();
 const displayName = ["source", "license", "idea"] as const;
 const infoList = computed(() =>
   displayName
-    .filter((key) => frontmatter[key])
+    .filter((key) => frontmatter.value[key])
     .map((key) => ({
       key,
       label: locale[key],
       content:
         key === "source" || key === "idea"
-          ? `<a href="${frontmatter[key]}" target="_blank" rel="noopener noreferrer">${frontmatter[key]}</a>`
-          : frontmatter[key],
+          ? `<a href="${frontmatter.value[key]}" target="_blank" rel="noopener noreferrer">${frontmatter.value[key]}</a>`
+          : frontmatter.value[key],
     }))
 );
 </script>

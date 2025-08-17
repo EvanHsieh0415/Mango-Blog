@@ -1,18 +1,15 @@
 <template>
   <figure>
-    <img :src="link" :alt="text"></img>
+    <img :src="link" :alt="text || 'image'" />
     <figcaption v-if="text">{{ text }}</figcaption>
   </figure>
 </template>
 
-<script>
-export default {
-  props: {
-    link: {
-      type: String,
-      required: true,
-    },
-    text: String
-  },
-};
+<script setup lang="ts">
+interface Props {
+  link: string;
+  text?: string;
+}
+
+const props = defineProps<Props>();
 </script>

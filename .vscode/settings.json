@@ -3,10 +3,10 @@
   "editor.formatOnSave": true,
   "cSpell.words": ["Mcmod", "Modrinth"],
   "files.exclude": {
-    // "docs/.vuepress/.cache": true,
-    // "docs/.vuepress/.temp": true,
-    // "docs/.vuepress/dist": true,
-    // "node_modules": true,
+    "docs/.vuepress/.cache": true,
+    "docs/.vuepress/.temp": true,
+    "docs/.vuepress/dist": true,
+    "node_modules": true,
     "pnpm-lock.yaml": true
   },
   "typescript.tsserver.experimental.enableProjectDiagnostics": true

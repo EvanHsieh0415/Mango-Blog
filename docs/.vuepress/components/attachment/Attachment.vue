@@ -2,71 +2,67 @@
   <component :is="currentComponent" :link="resolvedLink" :text="resolvedText" />
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { computed } from "vue";
 import { useRoute } from "vuepress/client";
 import Image from "./AttachmentImage.vue";
 import Video from "./AttachmentVideo.vue";
 import Download from "./AttachmentDownload.vue";
 
-function getExtension(filename: string) {
-  return filename.match(/\.(\w+)$/)[1];
+interface Props {
+  type?: "download" | "video" | "image";
+  link: string;
+  text?: string;
 }
 
-function getComponentByExtension(extension: string) {
-  switch (extension) {
-    case "mp4":
-    case "mp3":
-    case "ogg":
-      return Video;
-    case "png":
-    case "jpg":
-    case "gif":
-      return Image;
-    default:
-      return Download;
-  }
-}
+const props = defineProps<Props>();
 
-export default {
-  props: {
-    type: {
-      type: String,
-      validator: (value: string) => ["download", "video", "image"].includes(value),
-    },
-    link: {
-      type: String,
-      required: true,
-    },
-    text: String,
-  },
-  computed: {
-    currentComponent() {
-      // 優先根據 type 做判斷
-      switch (this.type) {
-        case "download":
-          return Download;
-        case "video":
-          return Video;
-        case "image":
-          return Image;
-        default: // 不指定 type 時，根據 link 的副檔名做判斷
-          return getComponentByExtension(getExtension(this.link));
-      }
-    },
-    resolvedLink() {
-      // "/xxx.html" -> "/docs/xxx/"
-      return (
-        "/docs/" +
-        useRoute()
-          .path.replace(/\.html$/, "/")
-          .replace(/^\//, "") +
-        this.link
-      );
-    },
-    resolvedText() {
-      // 如果沒有指定 text，則使用 link
-      return this.text ?? this.link;
-    },
-  },
+// 預設副檔名對應組件的映射
+const extensionComponentMap: Record<string, any> = {
+  mp4: Video,
+  mp3: Video,
+  ogg: Video,
+  png: Image,
+  jpg: Image,
+  jpeg: Image,
+  gif: Image,
 };
+
+// 取副檔名（更嚴謹，忽略 query/hash）
+function getExtension(filename: string): string {
+  // 去掉查詢字串與哈希
+  const cleanName = filename.split(/[?#]/)[0];
+  const dotIndex = cleanName.lastIndexOf(".");
+  if (dotIndex === -1) return "";
+  return cleanName.slice(dotIndex + 1).toLowerCase();
+}
+
+const route = useRoute();
+
+// 計算組件
+const currentComponent = computed(() => {
+  if (props.type) {
+    switch (props.type) {
+      case "download":
+        return Download;
+      case "video":
+        return Video;
+      case "image":
+        return Image;
+    }
+  }
+  const ext = getExtension(props.link);
+  return extensionComponentMap[ext] ?? Download;
+});
+
+// 安全組合路徑，確保最後有 `/`
+const resolvedLink = computed(() => {
+  // 把路徑轉成不帶.html 且以 '/' 結尾
+  const basePath = route.path.replace(/\.html$/, "/");
+  // 避免多餘的斜線，拼接成絕對路徑
+  const url = new URL(props.link, `https://example.com${basePath}`);
+  return url.pathname; // 會保留斜線開頭的路徑
+});
+
+const resolvedText = computed(() => props.text ?? props.link);
 </script>

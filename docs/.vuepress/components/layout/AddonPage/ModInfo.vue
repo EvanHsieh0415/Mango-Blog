@@ -1,13 +1,11 @@
 <template>
   <div v-if="hasInfoBox" class="component-modinfo-block">
-    <div v-if="name">{{ i18nText.name }}<br />　{{ name }}</div>
-    <div v-if="author">{{ i18nText.author }}<br />　{{ author }}</div>
+    <div v-if="name">{{ locale.name }}<br />　{{ name }}</div>
+    <div v-if="author">{{ locale.author }}<br />　{{ author }}</div>
     <div v-if="hasExternalLink">
-      <span v-if="CurseForge"><BadgeCurseForge :path="CurseForge" /><br /></span>
-      <span v-if="Modrinth"><BadgeModrinth :path="Modrinth" /><br /></span>
-      <span v-if="GitHub"><BadgeGitHub :path="GitHub" /><br /></span>
-      <span v-if="McMod"><BadgeMcMod :path="McMod" /><br /></span>
-      <span v-if="Wiki"><BadgeWiki :path="Wiki" /></span>
+      <span v-for="link in externalLinks" :key="link.key">
+        <component :is="`Badge${link.key}`" :path="link.url.value" /><br />
+      </span>
     </div>
   </div>
 </template>
@@ -33,62 +31,78 @@
 }
 </style>
 
-<script lang="ts">
-import { usePageLang, useRoutes } from "vuepress/client";
+<script setup lang="ts">
+import { usePageFrontmatter } from "vuepress/client";
+import { useLocaleConfig } from "@vuepress/helper/client";
+import { computed } from "vue";
 
-export default {
-  computed: {
-    mod() {
-      return this.$page.frontmatter.mod;
-    },
-
-    i18nText() {
-      return {
-        "en-US": {
-          name: "Mod Name: ",
-          author: "Author: ",
-        },
-        "zh-CN": {
-          name: "模组名称：",
-          author: "作者：",
-        },
-        "zh-TW": {
-          name: "模組名稱：",
-          author: "作者：",
-        },
-      }[usePageLang().value];
-    },
-
-    hasInfoBox() {
-      return this.mod && (this.name || this.author || this.hasExternalLink);
-    },
-    name() {
-      return this.mod.name;
-    },
-    author() {
-      const author = this.mod.author;
-      if (typeof author === "string") return author;
-      if (Array.isArray(author)) return author.join(", ");
-    },
-
-    hasExternalLink() {
-      return this.CurseForge || this.Modrinth || this.GitHub || this.McMod || this.Wiki;
-    },
-    CurseForge() {
-      return this.mod.CurseForge ?? this.mod.curseforge;
-    },
-    Modrinth() {
-      return this.mod.Modrinth ?? this.mod.modrinth;
-    },
-    GitHub() {
-      return this.mod.GitHub ?? this.mod.Github ?? this.mod.github;
-    },
-    McMod() {
-      return this.mod.McMod ?? this.mod.Mcmod ?? this.mod.mcmod;
-    },
-    Wiki() {
-      return this.mod.Wiki ?? this.mod.wiki;
-    },
+const locale = useLocaleConfig({
+  "/": {
+    name: "Mod Name: ",
+    author: "Author: ",
   },
+  "/zh-cn/": {
+    name: "模组名称：",
+    author: "作者：",
+  },
+  "/zh-tw/": {
+    name: "模組名稱：",
+    author: "作者：",
+  },
+});
+
+interface ModData {
+  name?: string;
+  author?: string | string[];
+  CurseForge?: string;
+  Modrinth?: string;
+  GitHub?: string;
+  McMod?: string;
+  Wiki?: string;
+}
+
+// get frontmatter
+const frontmatter = usePageFrontmatter<{ mod?: ModData }>().value;
+const mod = computed(() => frontmatter.mod ?? {});
+
+// get name and author
+const name = computed(() => mod.value.name);
+const author = computed(() => {
+  const { author } = mod.value;
+  if (Array.isArray(author)) return author.join(", ");
+  return author;
+});
+
+// get external links
+function getFirstAvailableKey<T extends object>(obj: T, keys: (keyof T | string)[]): any {
+  for (const key of keys) {
+    if (obj[key as keyof T] !== undefined) return obj[key as keyof T];
+  }
+  return undefined;
+}
+
+const modKeyMap = {
+  CurseForge: ["CurseForge", "curseforge"],
+  Modrinth: ["Modrinth", "modrinth"],
+  GitHub: ["GitHub", "Github", "github"],
+  McMod: ["McMod", "Mcmod", "mcmod"],
+  Wiki: ["Wiki", "wiki"],
 };
+
+function getModField(field: keyof typeof modKeyMap) {
+  return computed(() => getFirstAvailableKey(mod.value, modKeyMap[field]));
+}
+
+const externalLinks = computed(() =>
+  (Object.keys(modKeyMap) as (keyof typeof modKeyMap)[])
+    .map((key) => ({
+      key,
+      url: getModField(key),
+    }))
+    .filter((link) => link.url.value)
+);
+
+// checkers
+const hasExternalLink = computed(() => externalLinks.value.length);
+const hasInfoBox = computed(() => mod.value && (name.value || author.value || hasExternalLink.value));
 </script>

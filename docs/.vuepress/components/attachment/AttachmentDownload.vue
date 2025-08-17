@@ -2,17 +2,11 @@
   <a :href="link" download>{{ text }}</a>
 </template>
 
-<script>
-export default {
-  props: {
-    link: {
-      type: String,
-      required: true,
-    },
-    text: {
-      type: String,
-      required: true,
-    },
-  },
-};
+<script setup lang="ts">
+interface Props {
+  link: string;
+  text: string;
+}
+
+const props = defineProps<Props>();
 </script>

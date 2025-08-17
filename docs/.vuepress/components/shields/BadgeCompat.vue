@@ -4,7 +4,11 @@
       <tbody>
         <tr>
           <td v-for="badge in available" :key="badge.path">
-            <component :is="badge.component" :path="badge.path" :name="badge.name" />
+            <component
+              :is="badgeComponents[badge.key]"
+              :path="badge.path"
+              :name="badge.name"
+            />
           </td>
         </tr>
       </tbody>
@@ -12,32 +16,46 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<script setup lang="ts">
+import { computed } from "vue";
+import BadgeCurseForge from "./BadgeCurseForge.vue";
+import BadgeModrinth from "./BadgeModrinth.vue";
+import BadgeWiki from "./BadgeWiki.vue";
+import BadgeGitHub from "./BadgeGitHub.vue";
+import BadgeMcMod from "./BadgeMcMod.vue";
+
+const props = defineProps<{
+  CurseForge?: string;
+  Modrinth?: string;
+  Wiki?: string;
+  GitHub?: string;
+  McMod?: string;
+  name?: string;
+}>();
+
+const badgeComponents = {
+  CurseForge: BadgeCurseForge,
+  Modrinth: BadgeModrinth,
+  Wiki: BadgeWiki,
+  GitHub: BadgeGitHub,
+  McMod: BadgeMcMod,
+};
+
+const keys = ["CurseForge", "Modrinth", "Wiki", "GitHub", "McMod"] as const;
+
+const available = computed(() =>
+  keys
+    .filter((key) => props[key])
+    .map((key) => ({
+      key,
+      path: props[key]!,
+      name: props.name,
+    }))
+);
+</script>
+
+<style scoped lang="scss">
 div {
   align-items: center;
 }
 </style>
-
-<script lang="ts">
-export default {
-  props: {
-    CurseForge: String,
-    Modrinth: String,
-    Wiki: String,
-    GitHub: String,
-    McMod: String,
-    name: String,
-  },
-  computed: {
-    available() {
-      return ["CurseForge", "Modrinth", "Wiki", "GitHub", "McMod"]
-        .filter((key) => this[key]) // 過濾掉沒有值的屬性
-        .map((key) => ({
-          component: `Badge${key}`, // Badge 的 component 名稱
-          path: this[key],
-          name: this.name,
-        }));
-    },
-  },
-};
-</script>
