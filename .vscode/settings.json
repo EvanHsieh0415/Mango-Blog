@@ -1,7 +1,7 @@
 {
   "files.autoSave": "off",
   "editor.formatOnSave": true,
-  "cSpell.words": ["Mcmod", "Modrinth"],
+  "cSpell.words": ["Mcmod", "Modrinth", "xyapi"],
   "files.exclude": {
     "docs/.vuepress/.cache": true,
     "docs/.vuepress/.temp": true,

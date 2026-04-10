@@ -2,6 +2,7 @@ import BadgeComponent from "./shields/index.js";
 import Attachment from "./attachment/Attachment.vue";
 import ModInfo from "./layout/AddonPage/ModInfo.vue";
 import ArticleSource from "./layout/AddonPage/ArticleSource.vue";
+import playground from "./playground/index.js";
 
 const alias = {
   Attach: Attachment,
@@ -14,4 +15,5 @@ export default {
   ArticleSource,
 
   ...alias,
+  ...playground,
 };
